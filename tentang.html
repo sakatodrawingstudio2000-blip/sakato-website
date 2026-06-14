@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tentang Kami — Sakato Drawing Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <div class="logo">
+      <span class="logo-mark">SOS</span>
+      Sakato Drawing Studio
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="tentang.html" class="active">Tentang</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/6285765136700" class="btn btn-primary" style="padding:10px 20px;">WA Kami</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero blueprint-bg">
+    <div class="eyebrow">Filosofi & Identitas</div>
+    <h1>Satu Kata,<br><span>Satu Tujuan</span>: Sakato</h1>
+    <p>Nama Sakato Drawing Studio lahir dari nilai "sakato" — satu kata, satu tujuan, sejalan, dan kompak. Nilai ini menjadi dasar cara kami bekerja dan melayani setiap klien.</p>
+  </section>
+
+  <!-- CERITA -->
+  <section class="reveal tight">
+    <div class="section-head">
+      <span class="section-num">01 — Asal Nama</span>
+      <h2>Mengapa "Sakato"?</h2>
+    </div>
+    <div class="story-block">
+      <span class="story-label">Makna</span>
+      <div>
+        <h3>Satu Kata, Satu Tujuan</h3>
+        <p>Sakato berarti satu kata, satu tujuan — sebuah nilai yang menggambarkan kekompakan dan kesejalanan dalam bekerja. Setiap anggota tim bergerak menuju arah yang sama, dengan standar kualitas yang sama.</p>
+      </div>
+    </div>
+    <div class="story-block">
+      <span class="story-label">Cerita</span>
+      <div>
+        <h3>Enam Saudara yang Saling Membahu</h3>
+        <p>Nilai sakato berlatar belakang dari cerita enam saudara yang saling membahu untuk mencapai satu tujuan bersama. Cerita ini menjadi inspirasi bagaimana tim kami bekerja: saling mendukung, saling melengkapi, dan bertumbuh bersama.</p>
+      </div>
+    </div>
+    <div class="story-block">
+      <span class="story-label">Asal</span>
+      <div>
+        <h3>Dari Simawang</h3>
+        <p>Sakato Drawing Studio berangkat dari Simawang, membawa nilai kebersamaan tersebut ke dalam setiap pekerjaan gambar teknik — dari skala rumah tinggal hingga shop drawing proyek.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO & MAKNA -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="section-num">02 — Identitas Visual</span>
+      <h2>Logo "SOS"</h2>
+      <p>Inisial SOS pada logo merepresentasikan Sakato Drawing Studio, dibentuk menyerupai bingkai gambar teknik dengan garis tegas dan presisi — mencerminkan ketelitian dalam setiap pekerjaan kami.</p>
+    </div>
+  </section>
+
+  <!-- EMPAT TAGLINE -->
+  <section class="reveal">
+    <div class="about">
+      <div class="about-inner">
+        <div>
+          <span class="section-num" style="color:var(--brass);">03 — Tagline Kami</span>
+          <h2>Kata yang Kami Pegang</h2>
+          <p>Empat tagline berikut menggambarkan nilai dan komitmen Sakato Drawing Studio dalam bekerja sehari-hari, dari ketelitian gambar hingga semangat kolaborasi.</p>
+        </div>
+        <div class="about-emblem">
+          <div class="tagline-item">"Satu Tujuan, Satu Komitmen, Satu Kualitas."</div>
+          <div class="tagline-item">"Bertumbuh dari Kebersamaan, Berkarya untuk Masa Depan."</div>
+          <div class="tagline-item">"Menggambar dengan Ketelitian, Bekerja dengan Semangat Sakato."</div>
+          <div class="tagline-item">"Dari Simawang, Menggambar Masa Depan."</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="reveal">
+    <div class="cta-band">
+      <span class="section-num">04 — Bekerja Sama dengan Kami</span>
+      <h2 style="margin-top:10px;">Mari Wujudkan Proyek Anda Bersama Kami</h2>
+      <p>Kami siap membantu menyusun gambar yang sesuai dengan kebutuhan dan anggaran proyek Anda.</p>
+      <div class="cta-row">
+        <a href="https://wa.me/6285765136700" class="btn btn-primary">Hubungi via WhatsApp →</a>
+        <a href="layanan.html" class="btn btn-ghost">Lihat Layanan Kami</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Sakato Drawing Studio</span>
+    <span>Drawing · Shop Drawing · RAB · 3D Visualization</span>
+  </div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, {threshold: 0.12});
+  reveals.forEach(r => obs.observe(r));
+</script>
+
+</body>
+</html>
